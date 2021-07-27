@@ -1,17 +1,26 @@
 import Header from './components/Header'
 import MediaCard from './components/MediaCard'
+import { Grid, Container } from '@material-ui/core';
 
 function App() {
-  const placeholderName = "Lizard";
-  const placeholderDesc = "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica";
+  const placeholderName = "Product";
+  const placeholderDesc = "Here our generic product will excite you and cause your brain to release dopamine when purchasing said product. Nothing is quite better than spending money on a product like this one! You won't regret it or think about the consequences of the produce of this item causes to the environment.";
   return (
     <div className="App">
         <Header />
-        <div>
-          <MediaCard name={placeholderName} desc={placeholderDesc}/>
-          <MediaCard name={placeholderName} desc={placeholderDesc}/>
-          <MediaCard name={placeholderName} desc={placeholderDesc}/>
-        </div>
+        <Container style={{ padding: 20 }}>
+        <Grid container spacing={5} justify="center">
+          <Grid item>
+            <MediaCard name={placeholderName} desc={placeholderDesc}/> 
+          </Grid>
+          <Grid item>
+            <MediaCard name={placeholderName} desc={placeholderDesc}/> 
+          </Grid>
+          <Grid item>
+            <MediaCard name={placeholderName} desc={placeholderDesc}/> 
+          </Grid>
+        </Grid>
+        </Container>
     </div>
   );
 }
