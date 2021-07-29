@@ -9,11 +9,11 @@ class MediaCard extends React.Component{
     render()
     {
         return (
-            <div>
-                <div>
-                    {this.props.name}
-                </div>
-                <div>
+            <div class="card" style={{width: "18rem", maxWidth: "345"}}>
+                <div class="card-body">
+                    <div class="card-title">
+                        {this.props.name}
+                    </div>
                     {this.props.desc}
                 </div>
             </div>
