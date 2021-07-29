@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import Header from './components/Header'
 import MediaCard from './components/MediaCard'
 import { Grid, Container } from '@material-ui/core';
